@@ -17,15 +17,14 @@ tester.run do
     * text: '高瀬舟は京都の高瀬川を上下する小舟である。'
       options: <[大阪]>
 
-    # Multiple word
+    # Multiple words
     * text: '私はその人を常に先生と呼んでいた。'
       options: <[坊っちゃん 草枕]>
 
   invalid:
     # 名詞
     * text: '安全第一'
-      options:
-        list: <[安全]>
+      options: <[安全]>
       errors:
         * message: '禁止語句「安全」'
           line: 1
@@ -34,8 +33,7 @@ tester.run do
 
     # 動詞
     * text: '山路を登りながら、こう考えた。'
-      options:
-        list: <[登る]>
+      options: <[登る]>
       errors:
         * message: '禁止語句「登る」'
           line: 1
