@@ -1,7 +1,11 @@
 require! {
   'textlint-tester'
+  'es6-promise'
   '../': blacklist-ja
 }
+
+# Polyfill `Promiss` for PhantomJS testing environment
+es6-promise.polyfill!
 
 tester = new textlint-tester!
 
