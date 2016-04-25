@@ -75,7 +75,7 @@ tester.run do
     * text: '台所でスパゲティーをゆでているときに、電話がかかってきた。'
       options: <[茹でる]>
       errors:
-        * message: '禁止語句「茹でる'
+        * message: '禁止語句「茹でる」'
           line: 1
           column: 11
           ...
